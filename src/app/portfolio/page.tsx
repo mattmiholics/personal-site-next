@@ -1,4 +1,4 @@
-import { people } from "@/components/peices";
+import { people, mailbox } from "@/components/peices";
 import PortfolioWork from "@/components/PortfolioWork";
 import Image from "next/image";
 
@@ -14,6 +14,15 @@ export default function Portfolio() {
     <h2>VFX:</h2>
     <div className="flex flex-wrap justify-evenly content-evenly">
     <PortfolioWork pictures={people} />
+    <PortfolioWork pictures={people} />
+    <PortfolioWork pictures={people} />
+    <PortfolioWork pictures={people} />
+    <PortfolioWork pictures={people} />
+    <PortfolioWork pictures={people} />
+    </div>
+    <h2>Other:</h2>
+    <div className="flex flex-wrap justify-evenly content-evenly">
+    <PortfolioWork pictures={mailbox} />
     <PortfolioWork pictures={people} />
     <PortfolioWork pictures={people} />
     <PortfolioWork pictures={people} />

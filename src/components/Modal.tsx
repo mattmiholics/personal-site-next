@@ -14,23 +14,25 @@ const Modal = ({isOpen, title, onDismiss,children, images}) => {
             <div
             className="min-w-[400px] max-w-full overflow-x-hidden  min-h-[200px] bg-white rounded-xl flex flex-col"
             onClick={(event) => event.stopPropagation()}>
-                <AiOutlineClose
-                    className="absolute right-4 top-3 text-2xl text-red-600 cursor-pointer"
+                <div className="w-full my-5 flex flex-row items-center self-center justify-between mb-1 border border-b-gray-300">
+                    <h1 className="text-black ml-10 text-center text-m md:text-3xl">{images[0].name}</h1>
+                    <AiOutlineClose
+                    className=" text-4xl mr-10 text-red-600 cursor-pointer"
                     onClick={onDismiss}
                 />
-                <div className="w-full h-10 flex items-center mb-1 border border-b-gray-300">
-                    <h1 className="text-xl font-bold">{images.name}</h1>
                 </div>
-                <div>
+                
+                
+                <div className="px-10">
                 { images.map ((img) =>(
                         <div key={img.id}>
                             <Image 
                             src = {img.src}
                             alt = {img.alt}
-                            className='px-4'
+                            className=''
                             />
                             <p 
-                            className='text-black text-center text-4xl'
+                            className='text-black text-center mb-5 text-2xl'
                             >
                                 {img.desc}
                             </p>
