@@ -6,12 +6,12 @@ export default function Portfolio() {
   return (
     <>
     <main className="flex min-h-screen flex-col items-center p-10">
-    <h1 className="py-20">PORTFOLIO</h1>
-    <h2>Websites:</h2>
+    <h1 className="my-20 text-5xl">PORTFOLIO</h1>
+    <h2 className="text-2xl">Websites:</h2>
     <div className="flex flex-wrap justify-evenly content-evenly">
     <PortfolioWork pictures={people} />
     </div>
-    <h2>VFX:</h2>
+    <h2 className="text-2xl">VFX:</h2>
     <div className="flex flex-wrap justify-evenly content-evenly">
     <PortfolioWork pictures={people} />
     <PortfolioWork pictures={people} />
@@ -20,14 +20,9 @@ export default function Portfolio() {
     <PortfolioWork pictures={people} />
     <PortfolioWork pictures={people} />
     </div>
-    <h2>Other:</h2>
+    <h2 className="text-2xl">Other:</h2>
     <div className="flex flex-wrap justify-evenly content-evenly">
     <PortfolioWork pictures={mailbox} />
-    <PortfolioWork pictures={people} />
-    <PortfolioWork pictures={people} />
-    <PortfolioWork pictures={people} />
-    <PortfolioWork pictures={people} />
-    <PortfolioWork pictures={people} />
     </div>
     </main>
     </>

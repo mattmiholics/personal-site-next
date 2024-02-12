@@ -12,8 +12,8 @@ function Footer() {
   <div
     className="p-4 justify-start text-mPink bg-grimace items-center self-center">
     <p
-      className="text-mPink text-sm md:text-xl"
-      >Abducted Monkeys LLC</p>
+      className="text-mPink italic text-sm md:text-xl"
+      >Matt Miholics 2024</p>
   </div>
   <div className="  flex flex-row justify-evenly items-center self-center">
     <div className="p-9">

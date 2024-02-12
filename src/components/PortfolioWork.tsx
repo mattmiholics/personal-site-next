@@ -18,16 +18,16 @@ export default function PortfolioWork({ pictures }) {  // Destructure pictures f
   return (
     <>
       <div 
-        className=' max-w-md max-h-96  flex flex-row justify-center py-10'
+        className='max-w-md aspect-square  flex flex-row justify-center py-10'
         onClick={openModalHandler}
       >
         <div 
-          className='group relative cursor-pointer overflow-hidden bg-cover bg-no-repeat'
+          className='group relative aspect-video  cursor-pointer overflow-hidden bg-cover bg-no-repeat'
         >
           <Image
             src={pictures[0].src}  // Access src directly without curly braces
             alt={pictures[0].alt}
-            className='h-full w-full object-fill rounded-lg'
+            className='h-full w-full object-cover rounded-lg'
           />
           <div className='cursor-pointer absolute bottom-0 left-0 right-0 top-0 justify-center overflow-hidden rounded-lg flex flex-col bg-gray-200 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'>
           </div>
