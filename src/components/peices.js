@@ -3,12 +3,12 @@ import img2 from '../../public/images/photo2.jpg'
 export const people = [{
     id: 0, // Used in JSX as a key
     name: 'Creola Katherine Johnson',
-    src:{img1},
+    src: img1,
     alt:'img1'
   }, {
     id: 1, // Used in JSX as a key
     name: 'asdfg',
-    src:{img2},
+    src: img2,
     alt:'img2'
   }, {
     id: 2, // Used in JSX as a key

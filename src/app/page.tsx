@@ -1,6 +1,7 @@
-import CustSwiper from "@/components/CustSwipter.tsx";
+
 import Image from "next/image";
 import {people} from "@/components/peices"
+import CustSwiper from "@/components/CustSwipter";
 
 export default function Home() {
   return (

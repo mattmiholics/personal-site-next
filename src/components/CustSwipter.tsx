@@ -17,8 +17,6 @@ export default function CustSwiper(...data) {
   return (
     <Swiper 
     modules={[Navigation, Pagination]}
-    spaceBetween={50}
-    slidesPerView={3}
     navigation
     className=""
     > 
