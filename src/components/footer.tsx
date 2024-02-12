@@ -8,35 +8,37 @@ function Footer() {
   
   return (
   <>
-  <footer className="bg-grimace pb-2 w-full">
-  <div className="inline-flex mx-auto w-full justify-center pt-9">
-    <div className="mb-8">
-      <a href="https://www.tiktok.com/@abductedmonkeys" className=" flex mx-5 text-4xl hover:text-mTan text-mPink ">
-        <FaTiktok/>
-      </a>
-    </div>
-    <div className="mb-8 ">
-      <a href="https://twitter.com/Abduct3dMonkeys" className=" flex mx-5 text-4xl hover:text-mTan text-mPink ">
-        <FaSquareXTwitter/>
-      </a>
-    </div>
-    <div className="mb-8  ">
-      <a href="https://www.youtube.com/@AbductedMonkeys" className=" flex mx-5 text-4xl hover:text-mTan text-mPink ">
-        <AiFillYoutube/>
-      </a>
-    </div>
-    <div className="mb-8  ">
-      <a href='https://www.linkedin.com/company/abductedmonkeys/' className='flex mx-5 text-4xl hover:text-mTan text-mPink '>
-        <AiFillLinkedin />
-      </a>
-    </div>
-  </div>
+  <footer className="pb-2 h-fit w-full flex flex-row justify-between">
   <div
-    className="p-4 text-center text-mPink bg-grimace">
+    className="p-4 justify-start text-mPink bg-grimace items-center self-center">
     <p
       className="text-mPink "
       >Abducted Monkeys LLC</p>
   </div>
+  <div className="  flex flex-row justify-evenly items-center self-center">
+    <div className="p-9">
+      <a href="https://www.tiktok.com/@abductedmonkeys" className="text-4xl hover:text-mTan text-mPink ">
+        <FaTiktok/>
+      </a>
+    </div>
+    <div className="p-9 ">
+      <a href="https://twitter.com/Abduct3dMonkeys" className="text-4xl hover:text-mTan text-mPink ">
+        <FaSquareXTwitter/>
+      </a>
+    </div>
+    <div className="p-9 ">
+      <a href="https://www.youtube.com/@AbductedMonkeys" className="text-4xl hover:text-mTan text-mPink ">
+        <AiFillYoutube/>
+      </a>
+    </div>
+    <div className="p-9 ">
+      <a href='https://www.linkedin.com/company/abductedmonkeys/' className='text-4xl hover:text-mTan text-mPink '>
+        <AiFillLinkedin />
+      </a>
+    </div>
+    
+  </div>
+  
 </footer>
   </>
 );
