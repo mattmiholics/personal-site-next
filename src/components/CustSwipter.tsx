@@ -13,17 +13,17 @@ import 'swiper/css/scrollbar';
 import { Pagination, Navigation } from 'swiper/modules';
 
 
-export default function CustSwiper(data) {
+export default function CustSwiper(...data) {
   return (
     <Swiper 
-    modules={[Navigation, Pagination, Scrollbar, A11y]}
+    modules={[Navigation, Pagination]}
     spaceBetween={50}
     slidesPerView={3}
     navigation
     className=""
     > 
        { data.map(slide =>
-            <SwiperSlide>
+            <SwiperSlide key={slide.id}>
                 <div>
                 <Image
                 src = {slide.src}
