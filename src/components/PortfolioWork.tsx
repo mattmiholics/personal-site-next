@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Modal from './Modal';
 import { useState } from 'react';
+import { FaUnity } from "react-icons/fa";
+import { SiAdobephotoshop,SiUnrealengine } from "react-icons/si";
 
 export default function PortfolioWork({ pictures }) {  // Destructure pictures from props
 
@@ -34,6 +36,24 @@ export default function PortfolioWork({ pictures }) {  // Destructure pictures f
           <div className='absolute bottom-0 left-0 right-0 top-0 justify-center flex flex-col opacity-0 text-black group-hover:opacity-100'>
             <h1 className='flex self-center'>{pictures[0].name}</h1>
             <p className='flex self-center'>{pictures[0].desc}</p>
+            <p className='flex self-center'>tools used</p>
+            <div>
+            {pictures[0]?.toolsused?.map(tool =>{
+                switch (tool){
+                  case 'unity':
+                    {tool ? <FaUnity /> : null}
+                  case 'photoshop':
+                    {tool ? <SiAdobephotoshop /> : null}
+                  case 'substance':
+                    {tool ? <p>substance</p> : null}
+                  case 'unreal':
+                    {tool ? <SiUnrealengine /> : null}
+                  case 'maya':
+                    {tool ? <p>maya</p> : null}
+                }
+            })}
+            </div>
+           
           </div>
         </div>
       </div> 

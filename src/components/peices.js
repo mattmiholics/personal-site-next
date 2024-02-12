@@ -9,7 +9,14 @@ export const people = [{
   name: 'Creola Katherine Johnson',
   src: img1,
   alt: 'img1',
-  desc: 'first portfolio piece'
+  desc: 'first portfolio piece',
+  toolsused:[{
+    'unity': true,
+    'photoshop':true,
+    'unreal': true,
+    'substance': true,
+    'maya': false,
+  }]
 }, {
   id: 1,
   name: 'asdfg',
