@@ -23,13 +23,13 @@ const Modal = ({isOpen, title, onDismiss,children, images}) => {
                 </div>
                 
                 
-                <div className="px-10">
+                <div className="px-10 aspect-video w-sm h-auto object-contain">
                 { images.map ((img) =>(
                         <div key={img.id}>
                             <Image 
                             src = {img.src}
                             alt = {img.alt}
-                            className=''
+                            className='  '
                             />
                             <p 
                             className='text-black text-center mb-5 text-2xl'

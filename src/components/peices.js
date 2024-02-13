@@ -37,5 +37,12 @@ export const mailbox = [{
   name: 'Mailbox',
   src: mail1,
   alt: 'Screenshot of Mailbox',
-  desc:'In-Engine Render of Mailbox'
+  desc:'In-Engine Render of Mailbox',
+  toolsused:[{
+    'unity': false,
+    'photoshop':false,
+    'unreal': false,
+    'substance': false,
+    'maya': false,
+  }]
 }]
