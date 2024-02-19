@@ -4,7 +4,7 @@ import Modal from './Modal';
 import { useState } from 'react';
 import { FaUnity } from 'react-icons/fa';
 import { SiAdobephotoshop, SiUnrealengine } from 'react-icons/si';
-import mayaIco from "../../public/images/Icons/maya-logo.png";
+import mayaIco from "../../public/images/Icons/maya.png";
 import substanceIco from "../../public/images/Icons/substance logo.png";
 import Link from 'next/link';
 
