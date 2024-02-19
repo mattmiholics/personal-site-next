@@ -4,6 +4,8 @@ import Modal from './Modal';
 import { useState } from 'react';
 import { FaUnity } from 'react-icons/fa';
 import { SiAdobephotoshop, SiUnrealengine } from 'react-icons/si';
+import mayaIco from "../../public/images/Icons/maya-logo.png"
+import substanceIco from "../../public/images/Icons/substance logo.png"
 
 export default function PortfolioWork({ pictures }) {
   const [showModal, setShowModal] = useState(false);
@@ -16,24 +18,24 @@ export default function PortfolioWork({ pictures }) {
     setShowModal(false);
   };
 
-  const renderToolIcon = (tools, index) => {
+  const renderToolIcon = (tools) => {
     if (!tools || typeof tools !== 'object') {
       console.error("Invalid 'tools' data:", tools);
       return null;
     }
 
-    return Object.keys(tools).map((tool) => {
+    return Object.keys(tools).map((tool, index) => {
       switch (tool) {
         case 'unity':
-          return tools[tool] ? <FaUnity key={index} /> : null;
+          return tools[tool] ? <FaUnity key={`${tool}-${index}`} className='text-4xl' /> : null;
         case 'photoshop':
-          return tools[tool] ? <SiAdobephotoshop key={index} /> : null;
+          return tools[tool] ? <SiAdobephotoshop key={`${tool}-${index}`} className='text-4xl' /> : null;
         case 'substance':
-          return tools[tool] ? <SiAdobephotoshop key={index} /> : null;
+          return tools[tool] ? <Image src={substanceIco} alt='Substance Icon' key={`${tool}-${index}`} className='h-9 w-auto' /> : null;
         case 'unreal':
-          return tools[tool] ? <SiUnrealengine key={index} /> : null;
+          return tools[tool] ? <SiUnrealengine key={`${tool}-${index}`} className='text-4xl' /> : null;
         case 'maya':
-          return tools[tool] ? <SiAdobephotoshop key={index} /> : null;
+          return tools[tool] ? <Image src={mayaIco} alt='Maya Icon' key={`${tool}-${index}`} className='h-9 w-auto' /> : null;
         default:
           return null;
       }
@@ -73,13 +75,13 @@ export default function PortfolioWork({ pictures }) {
             alt={alt}
             className='h-full w-full object-cover rounded-lg'
           />
-          <div className='cursor-pointer absolute bottom-0 left-0 right-0 top-0 justify-center overflow-hidden rounded-lg flex flex-col bg-gray-200 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-50'></div>
+          <div className='cursor-pointer absolute bottom-0 left-0 right-0 top-0 justify-center overflow-hidden rounded-lg flex flex-col bg-gray-200 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-70'></div>
           <div className='absolute bottom-0 left-0 right-0 top-0 justify-center flex flex-col opacity-0 text-black group-hover:opacity-100'>
             <h1 className='flex self-center'>{name}</h1>
-            <p className='flex self-center'>{desc}</p>
-            <p className='flex self-center'>tools used</p>
-            <div className='flex self-center justify-between'>
-              {renderToolIcon(toolsused[0], 0)}
+            <p className='flex self-center'>{pictures[0].hoverdesc}</p>
+            <p className='flex self-center'>Tools Used:</p>
+            <div className='flex self-center justify-evenly w-1/2'>
+              {renderToolIcon(toolsused[0])}
             </div>
           </div>
         </div>

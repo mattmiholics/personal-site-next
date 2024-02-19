@@ -29,7 +29,7 @@ const Modal = ({isOpen, title, onDismiss,children, images}) => {
                             <Image 
                             src = {img.src}
                             alt = {img.alt}
-                            className='  '
+                            className='md:max-w-2xl'
                             />
                             <p 
                             className='text-black text-center mb-5 text-2xl'
