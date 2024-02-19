@@ -12,12 +12,12 @@ const Modal = ({isOpen, title, onDismiss,children, images}) => {
             onClick={onDismiss}
         >
             <div
-            className="min-w-[400px] max-w-full overflow-x-hidden  min-h-[200px] bg-white rounded-xl flex flex-col"
+            className="min-w-[400px] max-w-full overflow-x-hidden  min-h-[200px] bg-gray-300 md:rounded-xl flex flex-col "
             onClick={(event) => event.stopPropagation()}>
-                <div className="w-full my-5 flex flex-row items-center self-center justify-between mb-1 border border-b-gray-300">
-                    <h1 className="text-black ml-10 text-center text-m md:text-3xl">{images[0].name}</h1>
+                <div className="w-full  flex flex-row items-center self-center justify-between mb-1 border-b-gray-300 border-t-0 sticky top-0 bg-gray-300">
+                    <h1 className="text-black my-5 ml-10 text-center text-xl md:text-3xl">{images[0].name}</h1>
                     <AiOutlineClose
-                    className=" text-4xl mr-10 text-red-600 cursor-pointer"
+                    className=" text-4xl mr-10 text-black hover:text-red-600 cursor-pointer"
                     onClick={onDismiss}
                 />
                 </div>

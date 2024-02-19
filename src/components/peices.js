@@ -36,6 +36,23 @@ export const people = [{
   desc: 'third portfolio piece'
 }];
 
+export const linkTest = [{
+  id: 0,
+  name: 'placeholder',
+  src: img1,
+  alt: 'img1',
+  desc: 'first portfolio piece',
+  href:'https://www.google.com',
+  hoverdesc: 'this one is a link',
+  toolsused:[{
+    'unity': true,
+    'photoshop':true,
+    'unreal': true,
+    'substance': true,
+    'maya': false,
+  }]
+}];
+
 export const mailbox = [{
   id: 0,
   name: 'Mailbox',
@@ -53,20 +70,17 @@ export const mailbox = [{
 },
 {
   id: 1,
-  name: 'asdfg',
   src: mail2, 
   alt: 'img2',
   desc: 'Wireframe'
 },
 {
   id: 3,
-  name: 'asdfg',
   src: mail3,
   alt: 'img2',
   desc: 'Texture Flats'
 },{
   id: 4,
-  name: 'asdfg',
   src: mail4,
   alt: 'img2',
   desc: 'Referance Photos'
