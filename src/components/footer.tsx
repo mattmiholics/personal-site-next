@@ -8,7 +8,7 @@ function Footer() {
   
   return (
   <>
-  <footer className="pb-2 h-fit w-full flex flex-row justify-between">
+  <footer className="pb-2 bg-black text-white h-fit w-full flex flex-row justify-between">
   <div
     className="p-4 justify-start text-mPink bg-grimace items-center self-center">
     <p
@@ -18,11 +18,11 @@ function Footer() {
   <div className="  flex flex-row justify-evenly items-center self-center">
     <div className="p-9">
       <a href="https://www.tiktok.com/@abductedmonkeys" className="text2xl md:text-3xl hover:text-mTan text-mPink ">
-        <FaTiktok/>
+        
       </a>
     </div>
     <div className="p-9 ">
-      <a href='https://www.linkedin.com/company/abductedmonkeys/' className='text-3xl md:text-4xl hover:text-mTan text-mPink '>
+      <a href='https://www.linkedin.com/in/matt-miholics/' target='_blank' className='text-3xl md:text-4xl hover:text-mTan text-mPink '>
         <AiFillLinkedin />
       </a>
     </div>
