@@ -6,6 +6,9 @@ import mail2 from '../../public/images/mailbox/mailboxwire.jpg'
 import mail3 from '../../public/images/mailbox/mailboxflat.png'
 import mail4 from '../../public/images/mailbox/mailboxref.png'
 
+import leaf1 from '../../public/images/leaves/leafsplosion.gif'
+import leaf2 from '../../public/images/leaves/leavesingame.gif'
+
 //keeping around as placeholder
 export const people = [{
   id: 0,
@@ -84,4 +87,25 @@ export const mailbox = [{
   src: mail4,
   alt: 'img2',
   desc: 'Referance Photos'
+}]
+export const leafVFX = [{
+  id: 0,
+  name: 'Leaf VFX',
+  src: leaf2,
+  alt: 'Leaf Explosion',
+  hoverdesc: 'Unity VFX Graph',
+  desc:'Leaves in Game',
+  toolsused:[{
+    'unity': true,
+    'photoshop':true,
+    'unreal': false,
+    'substance': false,
+    'maya': false,
+  }]
+},
+{
+  id: 1,
+  src: leaf1, 
+  alt: 'img2',
+  desc: 'Leaf Explosion scale test'
 }]
