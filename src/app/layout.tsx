@@ -1,6 +1,7 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import type { Metadata } from "next";
+import { ImageResponse } from "next/og";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import leafgif from "../../public/images/mailbox/mailbox-thumbnail.png"
@@ -17,10 +18,11 @@ export const metadata: Metadata = {
     description: "Web Development and Tech Art Resume/Portfolio for Matt Miholics",
     siteName: "Matt Miholics Personal Site",
     images: [{
-      url: "../../public/images/mailbox/mailbox-thumbnail.png",
+      url: "/images/mailbox/mailbox-thumbnail.png",
     }]
   }
 };
+
 
 export default function RootLayout({
   children,
