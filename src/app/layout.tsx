@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { ImageResponse } from "next/og";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import leafgif from "../../public/images/mailbox/mailbox-thumbnail.png"
+import leafgif from "../../public/images/mailbox/mailboxscreenshot.png"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "Web Development and Tech Art Resume/Portfolio for Matt Miholics",
     siteName: "Matt Miholics Personal Site",
     images: [{
-      url: "./images/mailbox/mailboxscreenshot.png",
+      url: `/components/ogImage`,
     }]
   }
 };

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { ImageResponse } from "next/og";
-export default function ogImage(image, altTxt){
+import mailbox from "../../public/images/mailbox/mailboxscreenshot.jpg"
+
+export default function ogImage(){
     return new ImageResponse(
         <div
           style={{
@@ -19,10 +21,9 @@ export default function ogImage(image, altTxt){
           }}
         >
           {/* @ts-ignore */}
-          <Image src={image} width="425" height="430" alt={altTxt} style={{ margin: '0 0 15px 0' }}/>
+          <Image src={mailbox} width="425" height="430" alt={mailbox} style={{ margin: '0 0 15px 0' }}/>
         </div>
       , {
-      
       }
       );
   }
