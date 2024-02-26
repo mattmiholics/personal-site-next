@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "Web Development and Tech Art Resume/Portfolio for Matt Miholics",
     siteName: "Matt Miholics Personal Site",
     images: [{
-      url: `/components/ogImage`,
+      url: "/images/mailbox/mailboxscreenshot.png",
     }]
   }
 };
