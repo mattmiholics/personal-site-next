@@ -30,9 +30,9 @@ export default function Resume() {
       <h2 className="p-2  text-lg md:text-2xl font-bold">Web Development Co-op - Southeastern Pennsylvania Transportation Authority</h2>
       <h3 className="p-2 text-md md:text-2xl font-bold">03/2022 - 09/2022, Philadelphia PA</h3>
       <ul className="text-left text-sm md:text-lg"> 
-        <li className="p-2">- Helped transition SEPTA's main website, septa.org, to WordPress</li>
-        <li className="p-2">- Daily updates to SEPTA's homepage as well as alerts and advisories for SEPTA's 100+ transit routes</li>
-        <li className="p-2">- Helped edit and publish online content for a major brand deal for SEPTA's first new station in 25 years</li>
+        <li className="p-2">- Helped transition SEPTAs main website, septa.org, to WordPress</li>
+        <li className="p-2">- Daily updates to SEPTAs homepage as well as alerts and advisories for SEPTAs 100+ transit routes</li>
+        <li className="p-2">- Helped edit and publish online content for a major brand deal for SEPTAs first new station in 25 years</li>
       </ul>
     </div>
 
