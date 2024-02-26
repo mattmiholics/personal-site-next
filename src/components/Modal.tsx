@@ -1,7 +1,7 @@
 import { AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
 
-const Modal = ({isOpen, title, onDismiss,children, images}) => {
+const Modal = ({isOpen, title, onDismiss, images}) => {
     if (!isOpen){
         return null;
     }
