@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Modal from './Modal';
 import { useState } from 'react';
 import { FaUnity } from 'react-icons/fa';
-import { SiAdobephotoshop, SiUnrealengine } from 'react-icons/si';
+import { SiAdobephotoshop, SiUnrealengine, SiNextdotjs, SiTailwindcss  } from 'react-icons/si';
 import mayaIco from "../../public/images/Icons/maya.png";
 import substanceIco from "../../public/images/Icons/substance logo.png";
 import Link from 'next/link';
@@ -39,6 +39,10 @@ export default function PortfolioWork({ pictures }) {
           return tools[tool] ? <SiUnrealengine key={`${tool}-${index}`} className='text-4xl' /> : null;
         case 'maya':
           return tools[tool] ? <Image src={mayaIco} alt='Maya Icon' key={`${tool}-${index}`} className='h-9 w-auto' /> : null;
+        case 'nextjs':
+          return tools[tool] ? <SiNextdotjs key={`${tool}-${index}`} className='text-4xl' /> : null;
+        case 'tailwind':
+          return tools[tool] ? <SiTailwindcss key={`${tool}-${index}`} className='text-4xl' /> : null;
         default:
           return null;
       }
@@ -74,7 +78,7 @@ export default function PortfolioWork({ pictures }) {
       onClick={pictures[0].href == null ? openModalHandler : null}
     >
       
-      <div className='group relative aspect-video  overflow-hidden bg-cover bg-no-repeat'>
+      <div className='group relative aspect-video overflow-hidden bg-cover bg-no-repeat'>
         <Image
           src={src}
           alt={alt}

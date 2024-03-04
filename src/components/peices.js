@@ -9,6 +9,8 @@ import mail4 from '../../public/images/mailbox/mailboxref.png'
 import leaf1 from '../../public/images/leaves/leafsplosion.gif'
 import leaf2 from '../../public/images/leaves/leavesingame.gif'
 
+import monkeys from '../../public/images/abductedmonkeys.png'
+
 //keeping around as placeholder
 export const people = [{
   id: 0,
@@ -109,3 +111,17 @@ export const leafVFX = [{
   alt: 'img2',
   desc: 'Leaf Explosion scale test'
 }]
+
+export const monkeySite = [{
+  id: 0,
+  name: 'Abducted Monkeys Site',
+  src: monkeys,
+  alt: 'Abducted Monkeys Logo',
+  desc: 'first portfolio piece',
+  href:'https://abductedmonkeys.com',
+  hoverdesc: 'Company Site for Abducted Monkeys',
+  toolsused:[{
+    'nextjs':true,
+    'tailwind':true,
+  }]
+}];

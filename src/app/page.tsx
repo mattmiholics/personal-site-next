@@ -1,12 +1,27 @@
-
+import { people, mailbox, linkTest, leafVFX, monkeySite } from "@/components/peices";
+import PortfolioWork from "@/components/PortfolioWork";
 import Image from "next/image";
-import {people} from "@/components/peices"
-import CustSwiper from "@/components/CustSwipter";
+import Link from "next/link";
 
-export default function Home() {
+export default function Portfolio() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>HOME PAGE</h1>
+    <>
+    <main className="flex min-h-screen flex-col items-center bg-gray-300 text-black p-10">
+    <h1 className="my-20 text-5xl">PORTFOLIO</h1>
+    <h2 className="text-2xl">Websites:</h2>
+    <div className="flex flex-wrap justify-evenly content-evenly">
+    <PortfolioWork pictures={monkeySite} />
+    </div>
+    <h2 className="text-2xl">VFX:</h2>
+    <div className="flex flex-wrap justify-evenly content-between">
+
+    <PortfolioWork pictures={leafVFX} />
+    </div>
+    <h2 className="text-2xl">Other:</h2>
+    <div className="flex flex-wrap justify-evenly content-evenly">
+    <PortfolioWork pictures={mailbox} />
+    </div>
     </main>
+    </>
   );
 }
