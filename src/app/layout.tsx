@@ -9,6 +9,8 @@ import leafgif from "../../public/images/mailbox/mailboxscreenshot.jpg"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  //change this base later
+  metadataBase: new URL('https://mattmiholics.github.io'),
   title: "Matt Miholics",
   description: "Web Development and Tech Art Resume/Portfolio for Matt Miholics",
   openGraph:{
