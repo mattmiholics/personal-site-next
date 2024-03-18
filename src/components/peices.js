@@ -202,7 +202,7 @@ export const bench = [{
     'photoshop':true,
     'unreal': false,
     'substance': false,
-    'maya': false,
+    'maya': true,
   }]
 },
 {
