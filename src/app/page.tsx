@@ -1,4 +1,4 @@
-import { people, mailbox, linkTest, leafVFX, monkeySite, lockjawUI } from "@/components/peices";
+import { people, mailbox, linkTest, leafVFX, monkeySite, lockjawUI, explosionVFX, bench } from "@/components/peices";
 import PortfolioWork from "@/components/PortfolioWork";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,13 +14,14 @@ export default function Portfolio() {
     </div>
     <h2 className="text-2xl font-bold">Tech Art:</h2>
     <div className="flex flex-wrap justify-evenly content-between">
-
-    <PortfolioWork pictures={leafVFX} />
     <PortfolioWork pictures={lockjawUI}></PortfolioWork>
+    <PortfolioWork pictures={leafVFX} />
+    <PortfolioWork pictures={explosionVFX} />
     </div>
     <h2 className="text-2xl font-bold">Other:</h2>
     <div className="flex flex-wrap justify-evenly content-evenly">
     <PortfolioWork pictures={mailbox} />
+    <PortfolioWork pictures={bench} />
     </div>
     </main>
     </>

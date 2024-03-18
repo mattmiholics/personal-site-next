@@ -14,6 +14,16 @@ import lockjawUI2 from '../../public/images/lockjawui/individualpartcooldowns.gi
 import lockjawUI3 from '../../public/images/lockjawui/pickupui.png'
 import lockjawUI4 from '../../public/images/lockjawui/colorbasedui.png'
 
+import explosionVFX1 from '../../public/images/explosionvfx/explosionvfxingame.gif'
+import explosionVFX2 from '../../public/images/explosionvfx/explosionvfx.gif'
+import explosionVFX3 from '../../public/images/explosionvfx/explosionlargevfx.gif'
+
+import bench1 from '../../public/images/bench/benchscreenshot.png'
+import bench2 from '../../public/images/bench/benchwire.jpg'
+import bench3 from '../../public/images/bench/benchflats.png'
+import bench4 from '../../public/images/bench/benchflats2.png'
+import bench5 from '../../public/images/bench/benchref.png'
+
 
 import monkeys from '../../public/images/abductedmonkeys.png'
 
@@ -117,6 +127,7 @@ export const leafVFX = [{
   alt: 'img2',
   desc: 'Leaf Explosion scale test'
 }]
+
 export const lockjawUI = [{
   id: 0,
   name: 'Lockjaw - Inventory UI',
@@ -149,7 +160,76 @@ export const lockjawUI = [{
   src: lockjawUI4, 
   alt: 'img2',
   desc: 'Lives account for different Robot Colors'
-}]
+}];
+
+export const explosionVFX = [{
+  id: 0,
+  name: 'Explosion VFX',
+  src: explosionVFX1,
+  alt: 'explosion gif',
+  hoverdesc: 'Unity VFX Graph',
+  desc:'In-game view of VFX',
+  toolsused:[{
+    'unity': true,
+    'photoshop':true,
+    'unreal': false,
+    'substance': false,
+    'maya': false,
+  }]
+},
+{
+  id: 1,
+  src: explosionVFX2, 
+  alt: 'img2',
+  desc: 'Isolated view of explosion'
+},
+{
+  id: 2,
+  src: explosionVFX3, 
+  alt: 'img2',
+  desc: 'Unused larger explosion'
+}];
+
+export const bench = [{
+  id: 0,
+  name: 'Bench',
+  src: bench1,
+  alt: 'bench',
+  hoverdesc: 'Unreal Engine 4 Asset',
+  desc:'In-Engine Render of Mailbox',
+  toolsused:[{
+    'unity': true,
+    'photoshop':true,
+    'unreal': false,
+    'substance': false,
+    'maya': false,
+  }]
+},
+{
+  id: 1,
+  src: bench2, 
+  alt: 'img2',
+  desc: 'Wireframe of bench'
+},
+{
+  id: 2,
+  src: bench3, 
+  alt: 'img2',
+  desc: 'Bench Texture flats 1'
+},
+{
+  id: 3,
+  src: bench4, 
+  alt: 'img2',
+  desc: 'Bench Texture flats 2'
+}
+,
+{
+  id: 4,
+  src: bench5, 
+  alt: 'img2',
+  desc: 'Refernace photos for bench'
+}];
 
 export const monkeySite = [{
   id: 0,
