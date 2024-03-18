@@ -16,13 +16,8 @@ function Footer() {
       >Matt Miholics 2024</p>
   </div>
   <div className="  flex flex-row justify-evenly items-center self-center">
-    <div className="p-9">
-      <a href="https://www.tiktok.com/@abductedmonkeys" className="text2xl md:text-3xl hover:text-mTan text-mPink ">
-        
-      </a>
-    </div>
     <div className="p-9 ">
-      <a href='https://www.linkedin.com/in/matt-miholics/' target='_blank' className='text-3xl md:text-4xl hover:text-mTan text-mPink '>
+      <a href='https://www.linkedin.com/in/matt-miholics/' target='_blank' className='text-3xl md:text-4xl hover:text-orange-400 text-white '>
         <AiFillLinkedin />
       </a>
     </div>

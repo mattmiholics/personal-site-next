@@ -9,6 +9,12 @@ import mail4 from '../../public/images/mailbox/mailboxref.png'
 import leaf1 from '../../public/images/leaves/leafsplosion.gif'
 import leaf2 from '../../public/images/leaves/leavesingame.gif'
 
+import lockjawUI1 from '../../public/images/lockjawui/fullgameui.gif'
+import lockjawUI2 from '../../public/images/lockjawui/individualpartcooldowns.gif'
+import lockjawUI3 from '../../public/images/lockjawui/pickupui.png'
+import lockjawUI4 from '../../public/images/lockjawui/colorbasedui.png'
+
+
 import monkeys from '../../public/images/abductedmonkeys.png'
 
 //keeping around as placeholder
@@ -92,7 +98,7 @@ export const mailbox = [{
 }]
 export const leafVFX = [{
   id: 0,
-  name: 'Leaf VFX',
+  name: 'Leaf Explosion',
   src: leaf2,
   alt: 'Leaf Explosion',
   hoverdesc: 'Unity VFX Graph',
@@ -110,6 +116,39 @@ export const leafVFX = [{
   src: leaf1, 
   alt: 'img2',
   desc: 'Leaf Explosion scale test'
+}]
+export const lockjawUI = [{
+  id: 0,
+  name: 'Lockjaw - Inventory UI',
+  src: lockjawUI1,
+  alt: 'Inventory Implementation',
+  hoverdesc: 'Unity',
+  desc:'Robots causing changes to UI',
+  toolsused:[{
+    'unity': true,
+    'photoshop':false,
+    'unreal': false,
+    'substance': false,
+    'maya': false,
+  }]
+},
+{
+  id: 1,
+  src: lockjawUI2, 
+  alt: 'img2',
+  desc: 'UI Accounts for different cooldowns'
+},
+{
+  id: 2,
+  src: lockjawUI3, 
+  alt: 'img2',
+  desc: 'Pickup Tool-tip over robot'
+},
+{
+  id: 3,
+  src: lockjawUI4, 
+  alt: 'img2',
+  desc: 'Lives account for different Robot Colors'
 }]
 
 export const monkeySite = [{

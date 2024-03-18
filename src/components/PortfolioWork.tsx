@@ -72,28 +72,30 @@ export default function PortfolioWork({ pictures }) {
     <>
     { pictures[0].href != null ? (
     <>
-      <Link href={pictures[0].href}>
+      <Link href={pictures[0].href} target='_blank'>
       <div
       className='max-w-md aspect-square flex flex-row justify-center mx-2 py-5 md:py-10 cursor-pointer'
       onClick={pictures[0].href == null ? openModalHandler : null}
     >
       
       <div className='group relative aspect-video overflow-hidden bg-cover bg-no-repeat'>
-        <Image
-          src={src}
-          alt={alt}
-          className='h-full w-full object-cover rounded-lg'
-        />
-        <div className='absolute bottom-0 left-0 right-0 top-0 justify-center overflow-hidden rounded-lg flex flex-col bg-gray-500 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-70'></div>
-        <div className='absolute bottom-0 left-0 right-0 top-0 justify-center flex flex-col opacity-0 text-black group-hover:opacity-100'>
-          <h1 className='flex self-center text-3xl'>{name}</h1>
-          <p className='flex self-center italic'>{pictures[0].hoverdesc}</p>
-          <p className='flex self-center py-2'>Tools Used:</p>
-          <div className='flex self-center justify-evenly w-1/2'>
-            {renderToolIcon(toolsused[0])}
-          </div>
-        </div>
+  <Image
+    src={src}
+    alt={alt}
+    className='h-full w-full object-cover rounded-lg'
+  />
+  <div className='absolute bottom-0 left-0 right-0 top-0 justify-around items-center overflow-hidden rounded-lg flex flex-col bg-orange-400 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-70'></div>
+  <div className='absolute inset-0 justify-center items-center self-center flex flex-col opacity-0 text-black group-hover:opacity-100'>
+    <div className='w-3/4 md:w-full text-center'>
+      <h1 className='font-bold text-3xl'>{name}</h1>
+      <p className='font-bold italic'>{pictures[0].hoverdesc}</p>
+      <p className='font-bold py-2'>Tools Used:</p>
+      <div className='flex justify-evenly'>
+        {renderToolIcon(toolsused[0])}
       </div>
+    </div>
+  </div>
+</div>
     </div>
       </Link> 
     </>
@@ -108,13 +110,13 @@ export default function PortfolioWork({ pictures }) {
       <Image
         src={src}
         alt={alt}
-        className='h-full w-full object-cover rounded-lg'
+        className='h-full w-full  object-cover rounded-lg'
       />
-      <div className='absolute bottom-0 left-0 right-0 top-0 justify-center overflow-hidden rounded-lg flex flex-col bg-gray-500 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-70'></div>
+      <div className='absolute bottom-0 left-0 right-0 top-0 justify-center overflow-hidden rounded-lg flex flex-col bg-orange-400 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-80'></div>
       <div className='absolute bottom-0 left-0 right-0 top-0 justify-center flex flex-col opacity-0 text-black group-hover:opacity-100'>
-        <h1 className='flex self-center text-3xl'>{name}</h1>
-        <p className='flex self-center italic'>{pictures[0].hoverdesc}</p>
-        <p className='flex self-center py-2'>Tools Used:</p>
+        <h1 className='flex self-center font-bold text-2xl'>{name}</h1>
+        <p className='flex self-center font-bold italic'>{pictures[0].hoverdesc}</p>
+        <p className='flex self-center font-bold py-2'>Tools Used:</p>
         <div className='flex self-center justify-evenly w-1/2'>
           {renderToolIcon(toolsused[0])}
         </div>
