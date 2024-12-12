@@ -2,6 +2,7 @@
 import {AiFillYoutube, AiFillLinkedin} from 'react-icons/ai';
 import {FaSquareXTwitter} from 'react-icons/fa6';
 import {FaTiktok} from 'react-icons/fa'
+import { FaGithub } from "react-icons/fa";
 
 
 function Footer() {
@@ -21,7 +22,11 @@ function Footer() {
         <AiFillLinkedin />
       </a>
     </div>
-    
+    <div className="p-9 ">
+      <a href='https://github.com/mattmiholics' target='_blank' className='text-3xl md:text-4xl hover:text-orange-400 text-white '>
+        <FaGithub />
+      </a>
+    </div>
   </div>
   
 </footer>
