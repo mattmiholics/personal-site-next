@@ -5,6 +5,18 @@ import Image from "next/image";
 const Modal = ({ isOpen, title, onDismiss, images }) => {
     const [expandedImage, setExpandedImage] = useState(null);
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden"; // Disable background scroll
+        } else {
+            document.body.style.overflow = ""; // Enable background scroll
+        }
+
+        return () => {
+            document.body.style.overflow = ""; // Cleanup when modal is unmounted
+        };
+    }, [isOpen]);
+
     const handleImageClick = (imgId) => {
         setExpandedImage(imgId);
     };
@@ -13,28 +25,22 @@ const Modal = ({ isOpen, title, onDismiss, images }) => {
         setExpandedImage(null);
     };
 
-    useEffect(() => {
-        if (!isOpen) {
-            setExpandedImage(null);
-        }
-    }, [isOpen]);
-
     return (
         <>
             {isOpen && (
                 <div
-                    className="fixed w-screen h-screen bg-black bg-opacity-60 top-0 left-0 right-0 z-40 flex justify-center items-center"
+                    className="fixed inset-0 bg-black bg-opacity-60 z-40 flex justify-center items-center"
                     onClick={onDismiss}
                 >
                     <div
-                        className="w-full max-w-md h-[90vh] bg-gray-300 rounded-xl flex flex-col overflow-hidden"
+                        className="w-full max-w-lg md:max-w-3xl h-[90vh] bg-gray-300 rounded-xl flex flex-col overflow-hidden"
                         onClick={(event) => event.stopPropagation()}
                     >
                         {/* Modal Header */}
                         <div className="w-full flex items-center justify-between p-4 bg-gray-300 border-b">
-                            <h1 className="text-black text-lg font-semibold">{title}</h1>
+                            <h1 className="text-black text-lg md:text-4xl font-semibold">{title}</h1>
                             <AiOutlineClose
-                                className="text-2xl text-black hover:text-red-600 cursor-pointer"
+                                className="text-2xl md:text-4xl text-black hover:text-red-600 cursor-pointer"
                                 onClick={onDismiss}
                             />
                         </div>
@@ -42,7 +48,7 @@ const Modal = ({ isOpen, title, onDismiss, images }) => {
                         {/* Expanded Image View */}
                         {expandedImage !== null && (
                             <div
-                                className="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center z-50 bg-black bg-opacity-80"
+                                className="fixed inset-0 flex justify-center items-center z-50 bg-black bg-opacity-80"
                                 onClick={handleExpandedImageClose}
                             >
                                 <div className="relative w-[90%] h-[90%]">
@@ -72,7 +78,7 @@ const Modal = ({ isOpen, title, onDismiss, images }) => {
                                         height={300}
                                         className="rounded-md"
                                     />
-                                    <p className="text-black text-center mt-2 text-sm">{img.desc}</p>
+                                    <p className="text-black text-center mt-2 text-sm lg:text-2xl">{img.desc}</p>
                                 </div>
                             ))}
                         </div>
