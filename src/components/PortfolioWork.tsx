@@ -111,6 +111,7 @@ export default function PortfolioWork({ pictures }) {
         src={src}
         alt={alt}
         priority={true}
+        loading='eager'
         className='h-full w-full  object-cover rounded-lg'
       />
       <div className='absolute bottom-0 left-0 right-0 top-0 justify-center overflow-hidden rounded-lg flex flex-col bg-orange-400 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-80'></div>
