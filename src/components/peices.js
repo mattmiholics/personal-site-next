@@ -228,7 +228,7 @@ export const bench = [{
   id: 4,
   src: bench5, 
   alt: 'img2',
-  desc: 'Refernace photos for bench'
+  desc: 'Refernece photos for bench'
 }];
 
 export const monkeySite = [{
